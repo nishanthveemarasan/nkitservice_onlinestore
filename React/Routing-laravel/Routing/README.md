@@ -26,7 +26,7 @@
     </b></pre>
     <p><b>In Body,</b></p>
     <pre><b>
-        <div id="example"></div>
+        <div id="root"></div>
         <script src="/js/app.js"></script>
     </b></pre>
         <hr>
