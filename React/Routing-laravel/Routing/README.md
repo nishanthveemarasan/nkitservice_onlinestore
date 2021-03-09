@@ -24,7 +24,7 @@
         In Header,
             <link href="/css/app.css" rel="stylesheet">
         In Body,
-        <div id="root"></div>
+        <div id="example"></div>
         <script src="/js/app.js"></script>
         
     </b></pre>
