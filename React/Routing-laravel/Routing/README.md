@@ -20,13 +20,14 @@
     </b></pre>
     <br>
     <h5>In Blade File</h5>
-    p
+    <p><b>In Header,</b></p>
     <pre><b>
-        In Header,
-            <link href="/css/app.css" rel="stylesheet">
-        In Body,
-        `<div id="example"></div>
-        <script` src="/js/app.js"></script>
+        <link href="/css/app.css" rel="stylesheet">
+    </b></pre>
+    <p><b>In Body,</b></p>
+    <pre><b>
+        <div id="example"></div>
+        <script src="/js/app.js"></script>
     </b></pre>
         <hr>
     <h4>Change the structure as React Index.js and App.js structure</h4>
