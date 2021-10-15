@@ -1,0 +1,30 @@
+.flexContainer {
+  flex: 1;
+  position: relative;
+}
+.flexContainer img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.flexContainer img:hover {
+  transform: scale(3);
+}
+.info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 200%;
+  color: black;
+}

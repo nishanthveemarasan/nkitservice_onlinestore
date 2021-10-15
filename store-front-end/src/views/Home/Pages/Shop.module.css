@@ -1,0 +1,100 @@
+.shopPage {
+  min-height: 50vh;
+}
+.topRow {
+  margin-bottom: 5%;
+  position: relative;
+}
+.searchBox {
+  background-color: rgb(245, 236, 236);
+  padding: 0 0;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  /* z-index: 100; */
+}
+
+.autoComBox li {
+  padding: 1% 3%;
+  list-style: none;
+  display: block;
+}
+.autoComBox li:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.topBox {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  animation: bump 800ms ease-out;
+}
+
+.checkboxClass {
+  transform: scale(3);
+}
+.labelClass {
+  margin-left: 5%;
+  font-size: 120%;
+  vertical-align: middle;
+}
+.filterSelect {
+  border-radius: 6px;
+}
+@keyframes bump {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .topBox {
+    top: 17%;
+  }
+  .filterSelectOption {
+    margin-top: 10%;
+  }
+  .topRow {
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 560px) {
+  .topBox {
+    top: 11%;
+  }
+  .filterSelectOption {
+    margin-top: 6%;
+  }
+  .topRow {
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .topBox {
+    top: 11%;
+  }
+  .filterSelectOption {
+    margin-top: 3%;
+  }
+  .topRow {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .topBox {
+    top: 9%;
+  }
+  .topRow {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topBox {
+    top: 10%;
+  }
+}

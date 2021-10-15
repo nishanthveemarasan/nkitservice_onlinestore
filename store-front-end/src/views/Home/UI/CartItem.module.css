@@ -1,0 +1,29 @@
+.cartItemImg {
+  /* width: 100%; */
+}
+
+@media screen and (max-width: 560px) {
+  .cartItemImg {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 560px) {
+  .cartItemImg {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cartItemImg {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cartItemImg {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cartItemImg {
+    width: 90%;
+  }
+}

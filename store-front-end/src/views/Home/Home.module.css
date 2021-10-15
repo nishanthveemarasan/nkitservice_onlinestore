@@ -1,0 +1,44 @@
+.inStockStyle {
+  color: green;
+  font-weight: bold;
+  font-size: 120%;
+  font-style: italic;
+}
+.outStockStyle {
+  color: red;
+  font-weight: bold;
+  font-size: 120%;
+  font-style: italic;
+}
+.price {
+  font-weight: bold;
+  font-size: 200%;
+  font-style: italic;
+}
+
+@media screen and (max-width: 560px) {
+  .marginProduct {
+    margin-top: 25%;
+  }
+}
+@media screen and (min-width: 560px) {
+  .marginProduct {
+    margin-top: 19%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marginProduct {
+    margin-top: 16%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .marginProduct {
+    margin-top: 12%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .marginProduct {
+    margin-top: 10%;
+  }
+}

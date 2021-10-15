@@ -1,0 +1,11 @@
+.checkboxClass {
+  transform: scale(3);
+}
+.labelClass {
+  margin-left: 8%;
+  font-size: 120%;
+  vertical-align: middle;
+}
+.parent {
+  margin: 0 0 10% 5%;
+}

@@ -1,0 +1,26 @@
+.label {
+  font-weight: bold;
+}
+.input {
+  font-weight: bold;
+  padding: 6%;
+  border-radius: 4px;
+}
+.input1 {
+  font-weight: bold;
+  padding: 10% 3%;
+  border-radius: 4px;
+}
+.input2 {
+  font-weight: bold;
+  padding: 3%;
+  border-radius: 4px;
+}
+.radioClass {
+  transform: scale(2.5);
+  margin-top: 1.2%;
+}
+.labelClass {
+  margin-left: 2%;
+  font-size: 130%;
+}

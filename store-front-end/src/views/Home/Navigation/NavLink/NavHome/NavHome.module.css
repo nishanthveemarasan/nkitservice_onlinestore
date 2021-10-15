@@ -1,0 +1,37 @@
+.link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropDown .dropDownContent {
+  position: absolute;
+  width: 100%;
+  color: white;
+  background-color: green;
+  z-index: 1;
+  height: 20vh;
+  opacity: 1;
+} */
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  background-color: green;
+  border-radius: 4px;
+  z-index: 1;
+  width: 10%;
+  height: 20vh;
+}
+.link:hover {
+  text-decoration: none;
+  color: brown;
+}
+.dropDown:hover .dropDownContent {
+  display: block;
+}

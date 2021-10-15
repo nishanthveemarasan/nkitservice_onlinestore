@@ -1,0 +1,35 @@
+.cartImg {
+  width: 50%;
+}
+.colSize {
+  height: 15vh;
+  background-color: lightgray;
+}
+@media screen and (max-width: 560px) {
+  .cartImg {
+    width: 20%;
+  }
+  .colSize {
+    height: 5vh;
+    background-color: lightgray;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .cartImg {
+    width: 20%;
+  }
+  .colSize {
+    height: 5vh;
+    background-color: lightgray;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cartImg {
+    width: 40%;
+  }
+  .colSize {
+    height: 15vh;
+    background-color: lightgray;
+  }
+}
