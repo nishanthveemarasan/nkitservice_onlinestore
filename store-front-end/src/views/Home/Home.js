@@ -6,6 +6,7 @@ import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import { getCartItems } from "src/store/cart-reducer";
 import ProductCartItem from "./UI/Product/ProductCartItem";
 import Footer from "./Footer/Footer";
+import { cartStoreAction } from "src/store/store";
 // import MainNavigation from "./Navigation/MainNavigation/MainNavigation";
 // import { CContainer } from "@coreui/react";
 const Checkout = React.lazy(() => import("./Pages/Checkout"));
@@ -57,7 +58,7 @@ const Home = () => {
 
             <Route
               exact
-              path="/success"
+              path="/success/:id"
               name="payResponse"
               render={() => <PayResponse />}
             />

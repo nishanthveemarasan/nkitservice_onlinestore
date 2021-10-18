@@ -12,12 +12,13 @@ import { useState, useEffect } from "react";
 import Accordian from "./Accordian/Accordian";
 import classes from "./Payment.module.css";
 import ContactInfo from "./ContactInfo/ContactInfo";
-import { useHistory } from "react-router";
+import { Redirect, useHistory } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import ARadioButton from "./UI/ARadioButton";
 import PayCard from "./UI/PayCard/PayCard";
 import { makePayment } from "src/store/cart-reducer";
 import SSpinner from "../../UI/spinner/SSpinner";
+import { API_URL } from "src/API/api";
 const PageNotFound = React.lazy(() => import("../../../pages/page404/Page404"));
 const Payment = (props) => {
   const history = useHistory();
@@ -83,7 +84,9 @@ const Payment = (props) => {
     const data = {
       pay_method: radio,
     };
-    dispatch(makePayment(data, history));
+    window.location = `${API_URL}gateway/method?pay_method=${radio}`;
+    // return <Redirect to={`${API_URL}gateway/method?pay_method=${radio}`} />;
+    // dispatch(makePayment(data, history));
   };
 
   const onValidation = (data) => {
@@ -115,7 +118,11 @@ const Payment = (props) => {
   };
   return (
     <div>
-      {!cartData.isDataReceived && <SSpinner size="lg" color="primary" />}
+      {!cartData.isDataReceived && (
+        <div style={{ height: "100vh" }}>
+          <SSpinner size="lg" color="primary" />
+        </div>
+      )}
       {cartData.isDataReceived && (
         <>
           {cartData.data.length === 0 && <PageNotFound />}
@@ -154,11 +161,11 @@ const Payment = (props) => {
                       }}
                     >
                       <ARadioButton
-                        label="Credit Card"
-                        id="credit_card"
+                        label="Klarna Payment(Pay now)"
+                        id="klarna"
                         radioClass={classes.radioClass}
                         labelClass={classes.labelClass}
-                        checked={radio === "credit_card"}
+                        checked={radio === "klarna"}
                         change={onPayMethoodChangeHandler}
                       />
                       {radio === "credit_card" && <PayCard />}
@@ -190,6 +197,7 @@ const Payment = (props) => {
                     showSpinner={state.loadButton}
                     SpinnerSize="lg"
                     disabled={payButton.enable}
+                    payMethod={radio}
                   />
                 </CCol>
               </CRow>

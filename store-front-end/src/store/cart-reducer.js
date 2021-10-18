@@ -106,7 +106,6 @@ export const getCartItems = () => {
         },
       });
       const response = await getData.json();
-      console.log(response.data);
       dispatch(
         cartStoreAction.loadCartItems({
           data: response.data,
