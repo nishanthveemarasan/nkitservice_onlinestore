@@ -22,6 +22,12 @@ const ShopSearch = (props) => {
   const state = useSelector(mapStateToProps);
   const dispatch = useDispatch();
   const onSearchHandler = (e) => {
+    if (e.target.value.trim().length === 0 && type) {
+      setType(false);
+      dispatch(clearSuggestion());
+      setClear(false);
+      dispatch(getShopProducts());
+    }
     setBlur(true);
     setSearch(e.target.value);
     setClear(true);
@@ -33,12 +39,6 @@ const ShopSearch = (props) => {
       debounce = setTimeout(() => {
         props.getSearchParam(search);
       }, 400);
-    }
-    if (search.trim().length === 0 && type) {
-      setType(false);
-      dispatch(clearSuggestion());
-      setClear(false);
-      dispatch(getShopProducts());
     }
     return () => {
       clearTimeout(debounce);

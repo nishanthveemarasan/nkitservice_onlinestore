@@ -228,6 +228,7 @@ const cartSlice = createSlice({
         data: action.payload.data,
         isLoading: false,
       };
+      console.log(state.search);
     },
     updateLoadId(state, action) {
       state.loadCounter = {
