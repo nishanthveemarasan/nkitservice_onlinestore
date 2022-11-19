@@ -12,7 +12,7 @@ following activities
 I have developed this fully responsive application using React(front end) and Laravel 8(backend)
 
 ### IMAGES
-![home page 1](/src/assets/images/readme/home_page_1.JPG)
+![home page 1](src/assets/images/readme/home_page_1.JPG)
 
 ![home page 2](/src/assets/images/readme/home_page_2.JPG)
 
