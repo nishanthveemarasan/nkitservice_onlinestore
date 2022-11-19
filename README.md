@@ -12,7 +12,8 @@ following activities
 I have developed this fully responsive application using React(front end) and Laravel 8(backend)
 
 ### IMAGES
-![home page 1](src/assets/images/readme/home_page_1.JPG)
+
+![home page 1](/src/assets/images/readme/home_page_1.JPG)
 
 ![home page 2](src/assets/images/readme/home_page_2.JPG)
 
@@ -20,14 +21,14 @@ I have developed this fully responsive application using React(front end) and La
 
 ### View Product to add to Card
 
-
 ![View Product 1 ](src/assets/images/readme/view_product_1.JPG)
 
-### View Card to add 
+### View Card to add
 
 ![View Product 1 ](src/assets/images/readme/view_card_1.JPG)
 
-### View Checkout to add 
+### View Checkout to add
+
 ![View Product 1 ](src/assets/images/readme/checkout_1.JPG)
 
 ![View Product 1 ](src/assets/images/readme/pay_method_1.JPG)
