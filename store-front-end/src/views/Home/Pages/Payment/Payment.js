@@ -119,7 +119,7 @@ const Payment = (props) => {
   return (
     <div>
       {!cartData.isDataReceived && (
-        <div style={{ height: "100vh" }}>
+        <div style={{ height: "100vh", width: "100%" }}>
           <SSpinner size="lg" color="primary" />
         </div>
       )}
