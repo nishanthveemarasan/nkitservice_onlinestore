@@ -14,25 +14,25 @@ I have developed this fully responsive application using React(front end) and La
 ### IMAGES
 ![home page 1](src/assets/images/readme/home_page_1.JPG)
 
-![home page 2](/src/assets/images/readme/home_page_2.JPG)
+![home page 2](src/assets/images/readme/home_page_2.JPG)
 
-![home page 3](/src/assets/images/readme/home_page_3.JPG)
+![home page 3](src/assets/images/readme/home_page_3.JPG)
 
 ### View Product to add to Card
 
 
-![View Product 1 ](/src/assets/images/readme/view_product_1.JPG)
+![View Product 1 ](src/assets/images/readme/view_product_1.JPG)
 
 ### View Card to add 
 
-![View Product 1 ](/src/assets/images/readme/view_card_1.JPG)
+![View Product 1 ](src/assets/images/readme/view_card_1.JPG)
 
 ### View Checkout to add 
-![View Product 1 ](/src/assets/images/readme/checkout_1.JPG)
+![View Product 1 ](src/assets/images/readme/checkout_1.JPG)
 
-![View Product 1 ](/src/assets/images/readme/pay_method_1.JPG)
+![View Product 1 ](src/assets/images/readme/pay_method_1.JPG)
 
 ### View Invoice
 
-![View Product 1 ](/src/assets/images/readme/invoice_1.JPG)
-![View Product 1 ](/src/assets/images/readme/invoice_2.JPG)
+![View Product 1 ](src/assets/images/readme/invoice_1.JPG)
+![View Product 1 ](src/assets/images/readme/invoice_2.JPG)
