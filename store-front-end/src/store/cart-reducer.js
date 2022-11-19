@@ -97,7 +97,7 @@ export const deductCartItems = (data) => {
 
 export const getCartItems = () => {
   return async (dispatch) => {
-    try {
+    try {  
       const getData = await fetch(`${API_URL}store/get`, {
         method: "GET",
         headers: {
@@ -106,7 +106,6 @@ export const getCartItems = () => {
         },
       });
       const response = await getData.json();
-      console.log(response.data);
       dispatch(
         cartStoreAction.loadCartItems({
           data: response.data,

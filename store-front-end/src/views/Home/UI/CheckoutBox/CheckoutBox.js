@@ -1,8 +1,16 @@
 import { NavLink } from "react-router-dom";
+import { API_URL } from "src/API/api";
+import AInput from "../../Pages/Payment/UI/AInput";
 import SButton from "../SButton";
 import CheckoutBoxItem from "./CheckoutBoxItem";
-
+import { useState, useEffect } from "react";
 const CheckoutBox = (props) => {
+  console.log(props);
+  const [payMethod, setPayMethod] = useState("");
+  useEffect(() => {
+    console.log(props.payMethod);
+    setPayMethod(props.payMethod);
+  }, [setPayMethod, props.payMethod]);
   const cartData = props.data;
   const itemCount = cartData.length;
   const subTotalCount = cartData.reduce((acc, el) => acc + el.count, 0);
@@ -15,6 +23,7 @@ const CheckoutBox = (props) => {
   const deliveryCharge = Number.parseFloat("165.55");
   const total = subTotalAmount + deliveryCharge;
 
+  const onChangeHandler = (e) => {};
   return (
     <>
       <CheckoutBoxItem
@@ -53,6 +62,7 @@ const CheckoutBox = (props) => {
       <div style={{ borderRadius: "4px" }}>
         <SButton
           name={props.buttonName ? props.buttonName : "Proceed to Checkout"}
+          type="submit"
           block={true}
           color="dark"
           class="py-3 font-weight-bolder"
